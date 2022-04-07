@@ -31,8 +31,8 @@ This database is a curation of 6 datasets which study the differences between pa
 
 ## Getting Started
 
-1. Search for your gene of interest below in the first column of this dataframe or use the various filters in the dataframe headers and tick the checkbox
-2. Select a database to query below
+1. Select a database to query below
+2. Search for your gene of interest below in the first column of this dataframe or use the various filters in the dataframe headers and tick the checkbox
 
 </div>
 ''', unsafe_allow_html=True)
