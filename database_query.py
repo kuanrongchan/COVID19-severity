@@ -1,15 +1,14 @@
-from select import select
 import pandas as pd
 import numpy as np
-import time
-import math
+# import time
+# import math
 import re
 # import base64
 # from io import BytesIO
 
 # from scipy.spatial.distance import pdist, squareform
 # from scipy.cluster.hierarchy import dendrogram, linkage
-from scipy import stats
+# from scipy import stats
 
 import streamlit as st
 from streamlit_tags import st_tags, st_tags_sidebar
