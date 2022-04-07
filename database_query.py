@@ -37,12 +37,12 @@ This database is a curation of 6 datasets which study the differences between pa
 </div>
 ''', unsafe_allow_html=True)
 
-df_paths = {"Fong 2021": ["/Users/clara/Dropbox/Streamlit_app/covid_datasets/counts/GSE155454_counts.csv", "/Users/clara/Dropbox/Streamlit_app/covid_datasets/anova/GSE155454_anova.csv"],
-            "Bibert 2021":["/Users/clara/Dropbox/Streamlit_app/covid_datasets/counts/Bibert2021_counts.csv","/Users/clara/Dropbox/Streamlit_app/covid_datasets/anova/Bibert2021_anova.csv"],
-            "McClain 2021":["/Users/clara/Dropbox/Streamlit_app/covid_datasets/counts/GSE161731_COVID_counts.csv","/Users/clara/Dropbox/Streamlit_app/covid_datasets/anova/GSE161731_anova.csv"],
-            "Overmyer 2021":["/Users/clara/Dropbox/Streamlit_app/covid_datasets/counts/GSE157103_counts.csv","/Users/clara/Dropbox/Streamlit_app/covid_datasets/anova/GSE157103_anova.csv"],
-            "Arunachalam 2020":["/Users/clara/Dropbox/Streamlit_app/covid_datasets/counts/GSE152418_counts.csv","/Users/clara/Dropbox/Streamlit_app/covid_datasets/anova/GSE152418_anova.csv"],
-            "Carapito 2022":["/Users/clara/Dropbox/Streamlit_app/covid_datasets/counts/GSE172114_counts.csv","/Users/clara/Dropbox/Streamlit_app/covid_datasets/anova/GSE172114_anova.csv"]}
+df_paths = {"Fong 2021": ["counts/GSE155454_counts.csv", "anova/GSE155454_anova.csv"],
+            "Bibert 2021":["counts/Bibert2021_counts.csv","anova/Bibert2021_anova.csv"],
+            "McClain 2021":["counts/GSE161731_COVID_counts.csv","anova/GSE161731_anova.csv"],
+            "Overmyer 2021":["counts/GSE157103_counts.csv","anova/GSE157103_anova.csv"],
+            "Arunachalam 2020":["counts/GSE152418_counts.csv","anova/GSE152418_anova.csv"],
+            "Carapito 2022":["counts/GSE172114_counts.csv","anova/GSE172114_anova.csv"]}
 
 dfchoice = st.selectbox(label='Select a dataset', options=df_paths.keys())
 
