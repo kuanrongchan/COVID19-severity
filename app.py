@@ -50,7 +50,8 @@ df, df_anova = pd.read_csv(df_paths[dfchoice][0], index_col=0), pd.read_csv(df_p
 
 
 
-st.markdown(' 2. Search for your gene of interest below in the first column of this dataframe or use the various filters in the dataframe headers and tick the checkbox. Note that only one gene can be selected at a time. For multiple queries, please use processed data available at https://github.com/kuanrongchan/COVID19-severity')
+st.markdown(' 2. Search for your gene of interest using the filters present in the dataframe headers') 
+st.markdown(' 3. Tick the checkbox indicated beside the gene name. Note that only one gene can be selected at a time. For multiple queries, please use processed data available at https://github.com/kuanrongchan/COVID19-severity')
 
 
 ######## Ag-Grid Stuff ###########
