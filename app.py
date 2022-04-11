@@ -62,6 +62,9 @@ gridOptions = gb.build()
 data = AgGrid(df_anova, gridOptions=gridOptions, theme='streamlit', update_mode=GridUpdateMode.SELECTION_CHANGED) # assigning a variable as it returns a dict of data and selected columns
 ##################################
 
+st.markdown(' 4. Box plots and strip plots comparing severe COVID-19, mild COVID-19 or healthy subjects. Users can mouse over the plots to gather data statistics') 
+
+
 idx_name = df_anova.columns[0] # Prevents the need to rename the anova columns
 fig = go.Figure()
 
