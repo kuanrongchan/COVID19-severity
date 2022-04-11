@@ -32,7 +32,7 @@ This database is a curation of 7 transcriptomics datasets which compare gene exp
 ## Getting Started
 
 1. Select a database to query below
-2. Search for your gene of interest below in the first column of this dataframe or use the various filters in the dataframe headers and tick the checkbox
+
 
 </div>
 ''', unsafe_allow_html=True)
@@ -47,6 +47,8 @@ df_paths = {"Fong 2021": ["counts/GSE155454_counts.csv", "anova/GSE155454_anova.
 dfchoice = st.selectbox(label='Select a dataset', options=df_paths.keys())
 
 df, df_anova = pd.read_csv(df_paths[dfchoice][0], index_col=0), pd.read_csv(df_paths[dfchoice][1]) # probably have to insert a for loop from here if we want a comparative box plot between datasets
+
+
 
 st.markdown(' 2. Search for your gene of interest below in the first column of this dataframe or use the various filters in the dataframe headers and tick the checkbox')
 
