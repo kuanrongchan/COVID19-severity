@@ -27,7 +27,7 @@ import plotly.express as px
 st.title("Severe COVID-19 blood transcriptomics database")
 st.markdown('''
  <div style="text-align: justify">
-This database is a curation of 7 transcriptomics datasets which compare gene expression differences between severe and mild COVID-19 patients.
+This database is a curation of 6 transcriptomics datasets which compare gene expression differences between severe and mild COVID-19 patients.
 
 ## Getting Started
 
