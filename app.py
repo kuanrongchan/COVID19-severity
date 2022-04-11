@@ -31,7 +31,7 @@ This database is a curation of 7 transcriptomics datasets which compare gene exp
 
 ## Getting Started
 
-1. Select a database to query below
+1. Select a dataset to query:
 
 
 </div>
@@ -50,8 +50,8 @@ df, df_anova = pd.read_csv(df_paths[dfchoice][0], index_col=0), pd.read_csv(df_p
 
 
 
-st.markdown(' 2. Search for your gene of interest using the filters present in the dataframe headers') 
-st.markdown(' 3. Tick the checkbox indicated beside the gene name. Note that only one gene can be selected at a time. For multiple queries, please use processed data available at https://github.com/kuanrongchan/COVID19-severity')
+st.markdown(' 2. Search for your gene of interest using the filters indicated the dataframe headers') 
+st.markdown(' 3. Tick the checkbox indicated beside the gene name. Note that only one gene can be selected at a time for graph plotting. For multiple gene queries, please use processed data available at https://github.com/kuanrongchan/COVID19-severity')
 
 
 ######## Ag-Grid Stuff ###########
