@@ -24,10 +24,10 @@ import plotly.express as px
 # import seaborn as sns
 
 
-st.title("Database Query")
+st.title("Severe COVID-19 blood transcriptomics database")
 st.markdown('''
  <div style="text-align: justify">
-This database is a curation of 6 datasets which study the differences between patients with severe or mild COVID-19 and healthy controls.
+This database is a curation of 7 transcriptomics datasets which compare gene expression differences between severe and mild COVID-19 patients.
 
 ## Getting Started
 
