@@ -48,6 +48,16 @@ dfchoice = st.selectbox(label='Select a dataset', options=df_paths.keys())
 
 df, df_anova = pd.read_csv(df_paths[dfchoice][0], index_col=0), pd.read_csv(df_paths[dfchoice][1]) # probably have to insert a for loop from here if we want a comparative box plot between datasets
 
+st.markdown('''
+ <div style="text-align: justify">
+This database is a curation of 7 transcriptomics datasets which compare gene expression differences between severe and mild COVID-19 patients.
+
+## Getting Started
+
+1. Select a database to query below
+2. Search for your gene of interest below in the first column of this dataframe or use the various filters in the dataframe headers and tick the checkbox
+
+</div>
 
 ######## Ag-Grid Stuff ###########
 gb = GridOptionsBuilder.from_dataframe(df_anova)
