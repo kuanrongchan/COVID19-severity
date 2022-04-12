@@ -37,12 +37,19 @@ This database is a curation of 6 transcriptomics datasets which compare gene exp
 </div>
 ''', unsafe_allow_html=True)
 
-df_paths = {"Fong 2021": ["counts/GSE155454_counts.csv", "anova/GSE155454_anova.csv"],
-            "Bibert 2021":["counts/Bibert2021_counts.csv","anova/Bibert2021_anova.csv"],
-            "McClain 2021":["counts/GSE161731_COVID_counts.csv","anova/GSE161731_anova.csv"],
-            "Overmyer 2021":["counts/GSE157103_counts.csv","anova/GSE157103_anova.csv"],
-            "Arunachalam 2020":["counts/GSE152418_counts.csv","anova/GSE152418_anova.csv"],
-            "Carapito 2022":["counts/GSE172114_counts.csv","anova/GSE172114_anova.csv"]}
+df_paths = {"Chan et al., 2021": ["counts/GSE155454_counts.csv", "anova/GSE155454_anova.csv"],
+            "Bibert et al., 2021":["counts/Bibert2021_counts.csv","anova/Bibert2021_anova.csv"],
+            "McClain et al., 2021":["counts/GSE161731_COVID_counts.csv","anova/GSE161731_anova.csv"],
+            "Overmyer et al., 2021":["counts/GSE157103_counts.csv","anova/GSE157103_anova.csv"],
+            "Arunachalam et al., 2020":["counts/GSE152418_counts.csv","anova/GSE152418_anova.csv"],
+            "Carapito et al., 2022":["counts/GSE172114_counts.csv","anova/GSE172114_anova.csv"]}
+
+df_desc = {"Chan et al., 2021": ("14 severe COVID-19, 18 mild COVID-19, and 6 healthy", "GSE155454"),
+            "Bibert et al., 2021":("15 severe COVID-19, 63 mild COVID-19, and 27 healthy", "Bibert2021"),
+            "McClain et al., 2021":("6 severe COVID-19, 10 mild COVID-19, and 19 healthy", "GSE161731"),
+            "Overmyer et al., 2021":("50 severe COVID-19 and 50 mild COVID-19", "GSE157103"),
+            "Arunachalam et al., 2020":("4 severe COVID-19, 12 mild COVID-19, and 17 healthy", "GSE152418"),
+            "Carapito et al., 2022":("46 severe COVID-19 and 23 mild COVID-19", "GSE172114")}
 
 dfchoice = st.selectbox(label='Select a dataset', options=df_paths.keys())
 
@@ -59,6 +66,19 @@ gb = GridOptionsBuilder.from_dataframe(df_anova)
 gb.configure_selection('single', use_checkbox=True, pre_selected_rows=[0]) # allows for checkbox selection of the dataframe. Shows the anova data but will plot the raw expression counts
 gridOptions = gb.build()
 
+with st.expander("Expand for dataset details", expanded=False):
+    st.markdown(f'''
+    <div style="text-align: justify">
+
+    **Description of {dfchoice} dataset**
+
+    {dfchoice} dataset compares the gene expression differences between {df_desc[dfchoice][0]} subjects. 
+    Raw count data can be found in {df_desc[dfchoice][1]} and the full processed data is available at https://github.com/kuanrongchan/COVID19-severity. 
+    In the processed data, the fold-change, p-value (t-test) and adjusted p-value (BH step-up procedure) between severe vs mild and severe vs healthy subjects are presented.
+
+    </div>
+    ''', unsafe_allow_html=True)
+    
 data = AgGrid(df_anova, gridOptions=gridOptions, theme='streamlit', update_mode=GridUpdateMode.SELECTION_CHANGED) # assigning a variable as it returns a dict of data and selected columns
 ##################################
 
