@@ -44,12 +44,12 @@ df_paths = {"Chan et al., 2021": ["counts/GSE155454_counts.csv", "anova/GSE15545
             "Arunachalam et al., 2020":["counts/GSE152418_counts.csv","anova/GSE152418_anova.csv"],
             "Carapito et al., 2022":["counts/GSE172114_counts.csv","anova/GSE172114_anova.csv"]}
 
-df_desc = {"Chan et al., 2021": ("14 severe COVID-19, 18 mild COVID-19, and 6 healthy", "GSE155454"),
-            "Bibert et al., 2021":("15 severe COVID-19, 63 mild COVID-19, and 27 healthy", "Bibert2021"),
-            "McClain et al., 2021":("6 severe COVID-19, 10 mild COVID-19, and 19 healthy", "GSE161731"),
-            "Overmyer et al., 2021":("50 severe COVID-19 and 50 mild COVID-19", "GSE157103"),
-            "Arunachalam et al., 2020":("4 severe COVID-19, 12 mild COVID-19, and 17 healthy", "GSE152418"),
-            "Carapito et al., 2022":("46 severe COVID-19 and 23 mild COVID-19", "GSE172114")}
+df_desc = {"Chan et al., 2021": ("14 severe COVID-19, 18 mild COVID-19, and 6 healthy", "GSE155454", "https://doi.org/10.15252/emmm.202114045"),
+            "Bibert et al., 2021":("15 severe COVID-19, 63 mild COVID-19, and 27 healthy", "Bibert2021", "https://dx.doi.org/10.3389%2Ffimmu.2021.666163"),
+            "McClain et al., 2021":("6 severe COVID-19, 10 mild COVID-19, and 19 healthy", "GSE161731", "https://www.nature.com/articles/s41467-021-21289-y"),
+            "Overmyer et al., 2021":("50 severe COVID-19 and 50 mild COVID-19", "GSE157103", "https://doi.org/10.1016/j.cels.2020.10.003"),
+            "Arunachalam et al., 2020":("4 severe COVID-19, 12 mild COVID-19, and 17 healthy", "GSE152418", "https://doi.org/110.1126/science.abc6261"),
+            "Carapito et al., 2022":("46 severe COVID-19 and 23 mild COVID-19", "GSE172114", "https://doi.org/10.1126/scitranslmed.abj7521")}
 
 dfchoice = st.selectbox(label='Select a dataset', options=df_paths.keys())
 
@@ -73,7 +73,7 @@ with st.expander("Expand for dataset details", expanded=False):
     **Description of {dfchoice} dataset**
 
     {dfchoice} dataset compares the gene expression differences between {df_desc[dfchoice][0]} subjects. 
-    Raw count data can be found in {df_desc[dfchoice][1]} and the full processed data is available at https://github.com/kuanrongchan/COVID19-severity. 
+    Raw count data can be found in [{df_desc[dfchoice][1]}]({df_desc[dfchoice][2]}) and the full processed data is available at https://github.com/kuanrongchan/COVID19-severity. 
     In the processed data, the fold-change, p-value (t-test) and adjusted p-value (BH step-up procedure) between severe vs mild and severe vs healthy subjects are presented.
 
     </div>
