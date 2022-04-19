@@ -4,22 +4,36 @@ This database is a curation of 6 transcriptomics datasets comparing the gene exp
 # Severe COVID-19 datasets included in the study
 ## 1. Fong et al., 2021. 
 Dataset compares the gene expression differences between 14 severe COVID-19, 18 mild COVID-19, and 6 healthy subjects.
+This dataset may be found at [GSE155454](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE155454).
+
 ## 2. Bibert et al., 2021
 Dataset compares the gene expression differences between 15 severe COVID-19, 63 mild COVID-19, and 27 healthy subjects.
+This dataset may be found at [Bibert 2021](http://dx.doi.org/10.17632/8wxhhykfnh.2).
+
 ## 3. McClain et al., 2021
 Dataset compares the gene expression differences between 6 severe COVID-19, 10 mild COVID-19, and 19 healthy subjects.
+This dataset may be found at [GSE161731](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE161731).
+
 ## 4. Overmyer et al., 2021
-Dataset compares the gene expression differences between 50 severe COVID-19 and 50 mild COVID-19 subjects. 
+Dataset compares the gene expression differences between 50 severe COVID-19 and 50 mild COVID-19 subjects.
+This dataset may be found at [GSE157103](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE157103).
+
 ## 5. Arunachalam et al., 2020
 Dataset compares the gene expression differences between 4 severe COVID-19, 12 mild COVID-19, and 17 healthy subjects.
+This dataset may be found at [GSE152418](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152418).
+
+
 ## 6. Carapito et al., 2022
 Dataset compares the gene expression differences between 46 severe COVID-19 and 23 mild COVID-19 subjects. 
+This dataset may be found at [GSE172114](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE172114).
+
 
 # Website
 Database app website instance is accessible at https://share.streamlit.io/kuanrongchan/covid19-severity/main/app.py
 
 Users can modify the codes to launch the app on your computer by doing these steps:
-1.
+
+1. Download this repository.
 2.
 3.
 
