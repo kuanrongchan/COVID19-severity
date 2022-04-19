@@ -1,7 +1,10 @@
 # Introduction
 This database is a curation of 6 transcriptomics datasets comparing the gene expression in severe COVID-19 and mild COVID-19 subjects. Each database contains raw count data and a processed file, where the raw count data may be visualised with the box and strip plots in the app. The processed files contain p-value (t-test), adjusted p-value (BH step-up procedure), ratio, and fold-change data between severe COVID-19 and mild COVID-19, or severe COVID-19 and healthy subjects. The data may be found in the counts and anova folders respectively.
 
-The study associated with this database may be found at [link] ().
+# Severe COVID-19 datasets included in the study
+## 1. Fong et al., 2021. 
+
+
 
 # Getting Started
 To use the app:
