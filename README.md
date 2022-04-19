@@ -34,7 +34,7 @@ Database app website instance is accessible at https://share.streamlit.io/kuanro
 Users can modify the codes to launch the app on your computer by doing these steps:
 
 1. Download this repository by clicking on the green code button and downloading the zip file.
-2. Navigate to the directory the file is located at and install dependencies as shown below.
+2. In the command-line interface (command prompt on Windows, Terminal on MacOS/Linux), navigate to the directory the file is located at and install its dependencies as shown below.
    ```
    cd path/to/file
    pip install -r requirements.txt
