@@ -37,14 +37,14 @@ This database is a curation of 6 transcriptomics datasets which compare gene exp
 </div>
 ''', unsafe_allow_html=True)
 
-df_paths = {"Chan et al., 2021": ["counts/GSE155454_counts.csv", "anova/GSE155454_anova.csv"],
+df_paths = {"Fong et al., 2021": ["counts/GSE155454_counts.csv", "anova/GSE155454_anova.csv"],
             "Bibert et al., 2021":["counts/Bibert2021_counts.csv","anova/Bibert2021_anova.csv"],
             "McClain et al., 2021":["counts/GSE161731_COVID_counts.csv","anova/GSE161731_anova.csv"],
             "Overmyer et al., 2021":["counts/GSE157103_counts.csv","anova/GSE157103_anova.csv"],
             "Arunachalam et al., 2020":["counts/GSE152418_counts.csv","anova/GSE152418_anova.csv"],
             "Carapito et al., 2022":["counts/GSE172114_counts.csv","anova/GSE172114_anova.csv"]}
 
-df_desc = {"Chan et al., 2021": ("14 severe COVID-19, 18 mild COVID-19, and 6 healthy", "GSE155454", "https://doi.org/10.15252/emmm.202114045"),
+df_desc = {"Fong et al., 2021": ("14 severe COVID-19, 18 mild COVID-19, and 6 healthy", "GSE155454", "https://doi.org/10.15252/emmm.202114045"),
             "Bibert et al., 2021":("15 severe COVID-19, 63 mild COVID-19, and 27 healthy", "Bibert2021", "https://dx.doi.org/10.3389%2Ffimmu.2021.666163"),
             "McClain et al., 2021":("6 severe COVID-19, 10 mild COVID-19, and 19 healthy", "GSE161731", "https://www.nature.com/articles/s41467-021-21289-y"),
             "Overmyer et al., 2021":("50 severe COVID-19 and 50 mild COVID-19", "GSE157103", "https://doi.org/10.1016/j.cels.2020.10.003"),
