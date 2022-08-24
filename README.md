@@ -27,6 +27,9 @@ This dataset may be found at [GSE152418](https://www.ncbi.nlm.nih.gov/geo/query/
 Dataset compares the gene expression differences between 46 severe COVID-19 and 23 mild COVID-19 subjects. 
 This dataset may be found at [GSE172114](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE172114).
 
+## 6. Zhang et al., 2021
+Dataset compares the gene expression differences between 5 severe COVID-19 and 5 mild COVID-19 subjects. 
+This dataset may be found at [GSE164805](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE164805).
 
 # Website
 Database app website instance is accessible at https://share.streamlit.io/kuanrongchan/covid19-severity/main/app.py
