@@ -1,5 +1,5 @@
 # Severe COVID-19 blood transcriptomics database
-This database is a curation of 6 transcriptomics datasets comparing the gene expression in severe COVID-19 and mild COVID-19 subjects. Each database contains raw count data and a processed file, where the raw count data may be visualised with the box and strip plots in the app. The processed files contain p-value (t-test), adjusted p-value (BH step-up procedure), ratio, and fold-change data between severe COVID-19 and mild COVID-19, or severe COVID-19 and healthy subjects. The transcriptomics data may be found in the counts and anova folders respectively.
+This database is a curation of 7 transcriptomics datasets comparing the gene expression in severe COVID-19 and mild COVID-19 subjects. Each database contains raw count data and a processed file, where the raw count data may be visualised with the box and strip plots in the app. The processed files contain p-value (t-test), adjusted p-value (BH step-up procedure), ratio, and fold-change data between severe COVID-19 and mild COVID-19, or severe COVID-19 and healthy subjects. The transcriptomics data may be found in the counts and anova folders respectively.
 
 # Severe COVID-19 datasets included in the study
 ## 1. Fong et al., 2021. 
@@ -27,7 +27,7 @@ This dataset may be found at [GSE152418](https://www.ncbi.nlm.nih.gov/geo/query/
 Dataset compares the gene expression differences between 46 severe COVID-19 and 23 mild COVID-19 subjects. 
 This dataset may be found at [GSE172114](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE172114).
 
-## 6. Zhang et al., 2021
+## 7. Zhang et al., 2021
 Dataset compares the gene expression differences between 5 severe COVID-19 and 5 mild COVID-19 subjects. 
 This dataset may be found at [GSE164805](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE164805).
 
